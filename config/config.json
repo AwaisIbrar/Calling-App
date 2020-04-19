@@ -1,12 +1,12 @@
 {
   "development": {
-    "PORT": 4100,
+    "PORT": 5009,
     "JWT_SECRET": "3ZGErMDCyxTOZYDp45GGD",
     "MONGODB_URI": "mongodb+srv://Awais:8855@cluster0-waode.mongodb.net/test?retryWrites=true&w=majority"
   },
 
   "stage": {
-    "PORT": 4100,
+    "PORT": 5009,
     "JWT_SECRET": "3ZGErMDCyxTOZYDp45GGD",
     "MONGODB_URI": "mongodb+srv://Awais:8855@cluster0-waode.mongodb.net/test?retryWrites=true&w=majority"
   }

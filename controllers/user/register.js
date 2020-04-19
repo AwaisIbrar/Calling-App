@@ -5,7 +5,7 @@ const {RENDER_BAD_REQUEST, CHECK_REQUEST_PARAMS} = require('../common/utils');
 const register = async (req, res) => {
     try {
 
-        const body = _.pick(req.body, ['email', 'password' , 'display_name' , 'first_name', 'last_name' , 'date_of_birth' , 'gender' , 'subject' , 'about' , 'address' , 'ph_no' , 'device_token', 'platform' , 'time_zone' , 'device_modal']);
+        const body = _.pick(req.body, ['email', 'password' , 'device_token', 'platform' , 'time_zone' , 'device_modal']);
         const params_required = ['email', 'password'];
         
         let responsed_user;
@@ -24,17 +24,6 @@ const register = async (req, res) => {
             const user = new User({
                 email: body.email,
                 password: body.password,
-                first_name: body.first_name,
-                last_name: body.last_name,
-                date_of_birth: body.date_of_birth,
-                gender : body.gender,
-                display_name : body.display_name,
-                address : body.address,
-                about : body.about,
-                ph_no : body.ph_no,
-                subject : body.subject,
-                
-                
                 account_activity_status : body.account_activity_status,
                 
             });
